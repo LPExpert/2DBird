@@ -1,0 +1,7 @@
+.vs/
+2D bird.sln
+Assembly-CSharp.csproj
+Library/
+Logs/
+Temp/
+obj/
