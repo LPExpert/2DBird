@@ -1,22 +1,7 @@
 fileFormatVersion: 2
-guid: 6b6c3ee5daa720d41b1a89f6838adfe7
+guid: 74c37dc0bdd6d8449a91f6aa303efd37
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 148595912367214231
-    second: TreeTileSetExtras_0
-  - first:
-      213: -1523159184526647345
-    second: TreeTileSetExtras_1
-  - first:
-      213: -6765311385131734606
-    second: TreeTileSetExtras_2
-  - first:
-      213: -416127486123923112
-    second: TreeTileSetExtras_3
-  - first:
-      213: 7200805095964304118
-    second: TreeTileSetExtras_4
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -55,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -172,120 +157,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: TreeTileSetExtras_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 24
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -4, y: -2}
-        - {x: -4, y: 2}
-        - {x: 4, y: 2}
-        - {x: 4, y: -2}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79e09bbe13bef0200800000000000000
-      internalID: 148595912367214231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TreeTileSetExtras_1
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 24
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -4, y: -2}
-        - {x: -4, y: 2}
-        - {x: 4, y: 2}
-        - {x: 4, y: -2}
-      tessellationDetail: 0
-      bones: []
-      spriteID: fcf5aedaac6acdae0800000000000000
-      internalID: -1523159184526647345
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TreeTileSetExtras_2
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 24
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b9215ea329cc12a0800000000000000
-      internalID: -6765311385131734606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TreeTileSetExtras_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 859ae40914e993af0800000000000000
-      internalID: -416127486123923112
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TreeTileSetExtras_4
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 16
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f266c155166ee360800000000000000
-      internalID: 7200805095964304118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

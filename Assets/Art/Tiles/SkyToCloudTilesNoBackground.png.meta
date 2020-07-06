@@ -1,52 +1,46 @@
 fileFormatVersion: 2
-guid: e55bac496ec9273488430f22440e82b3
+guid: 4c4703882b2f31347ab029ab815c0753
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5328986446682875140
-    second: TreeTileSet_0
+      213: -453933764326554366
+    second: SkyToCloudTilesNoBackground_0
   - first:
-      213: 8967005354314597516
-    second: TreeTileSet_1
+      213: 1351475537643932398
+    second: SkyToCloudTilesNoBackground_1
   - first:
-      213: -1300757220620884763
-    second: TreeTileSet_2
+      213: -8592713991984327638
+    second: SkyToCloudTilesNoBackground_2
   - first:
-      213: 3956625322937575873
-    second: TreeTileSet_3
+      213: -4999976120153471025
+    second: SkyToCloudTilesNoBackground_3
   - first:
-      213: -5959822716164734857
-    second: TreeTileSet_4
+      213: 7622887525160327355
+    second: SkyToCloudTilesNoBackground_4
   - first:
-      213: 8343820933556681579
-    second: TreeTileSet_5
+      213: -1456131671455096222
+    second: SkyToCloudTilesNoBackground_5
   - first:
-      213: -776766244439317847
-    second: TreeTileSet_6
+      213: -5998318615865490961
+    second: SkyToCloudTilesNoBackground_6
   - first:
-      213: 7754306930883598605
-    second: TreeTileSet_7
+      213: 4323788200739669905
+    second: SkyToCloudTilesNoBackground_7
   - first:
-      213: 1243893709829939458
-    second: TreeTileSet_8
+      213: 8223932279309924219
+    second: SkyToCloudTilesNoBackground_8
   - first:
-      213: 576515849535422677
-    second: TreeTileSet_9
+      213: 2052650229056807101
+    second: SkyToCloudTilesNoBackground_9
   - first:
-      213: 6411545427674504847
-    second: TreeTileSet_10
+      213: 4182412699611964624
+    second: SkyToCloudTilesNoBackground_10
   - first:
-      213: 1069058218177038439
-    second: TreeTileSet_11
+      213: 750432758070780526
+    second: SkyToCloudTilesNoBackground_11
   - first:
-      213: 6068243794899354987
-    second: TreeTileSet_12
-  - first:
-      213: 8753238864679091882
-    second: TreeTileSet_13
-  - first:
-      213: 8935755372135971286
-    second: TreeTileSet_14
+      213: -8586340184442068397
+    second: SkyToCloudTilesNoBackground_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -204,7 +198,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TreeTileSet_0
+      name: SkyToCloudTilesNoBackground_0
       rect:
         serializedVersion: 2
         x: 0
@@ -212,26 +206,20 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -4, y: -2}
-        - {x: -4, y: 2}
-        - {x: -1, y: 2}
-        - {x: -1, y: 1}
-        - {x: 4, y: 1}
-        - {x: 4, y: -2}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 405676760fc54f940800000000000000
-      internalID: 5328986446682875140
+      spriteID: 20582c975ad43b9f0800000000000000
+      internalID: -453933764326554366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TreeTileSet_1
+      name: SkyToCloudTilesNoBackground_1
       rect:
         serializedVersion: 2
         x: 8
@@ -239,33 +227,20 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -4, y: -2}
-        - {x: -4, y: 1}
-        - {x: -1, y: 1}
-        - {x: -1, y: -2}
-      - - {x: 0, y: -2}
-        - {x: 0, y: 0}
-        - {x: 0, y: 0}
-        - {x: -1, y: 0}
-        - {x: -1, y: -2}
-      - - {x: 0, y: -1}
-        - {x: 0, y: 0}
-        - {x: 3, y: 0}
-        - {x: 3, y: -1}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8482fa4cd3317c70800000000000000
-      internalID: 8967005354314597516
+      spriteID: eea85ef47d761c210800000000000000
+      internalID: 1351475537643932398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TreeTileSet_2
+      name: SkyToCloudTilesNoBackground_2
       rect:
         serializedVersion: 2
         x: 16
@@ -273,32 +248,20 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 1, y: -2}
-        - {x: 1, y: 1}
-        - {x: 4, y: 1}
-        - {x: 4, y: -2}
-      - - {x: 0, y: -2}
-        - {x: 0, y: 0}
-        - {x: 1, y: 0}
-        - {x: 1, y: -2}
-      - - {x: -3, y: -1}
-        - {x: -3, y: 0}
-        - {x: 0, y: 0}
-        - {x: 0, y: -1}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e42ed51338c2fde0800000000000000
-      internalID: -1300757220620884763
+      spriteID: a24de33862c80c880800000000000000
+      internalID: -8592713991984327638
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TreeTileSet_3
+      name: SkyToCloudTilesNoBackground_3
       rect:
         serializedVersion: 2
         x: 24
@@ -306,26 +269,20 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -4, y: -2}
-        - {x: -4, y: 1}
-        - {x: 1, y: 1}
-        - {x: 1, y: 2}
-        - {x: 4, y: 2}
-        - {x: 4, y: -2}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c96203a4c1c8e630800000000000000
-      internalID: 3956625322937575873
+      spriteID: fc701d0b5348c9ab0800000000000000
+      internalID: -4999976120153471025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TreeTileSet_4
+      name: SkyToCloudTilesNoBackground_4
       rect:
         serializedVersion: 2
         x: 0
@@ -333,20 +290,20 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77082bee0d47a4da0800000000000000
-      internalID: -5959822716164734857
+      spriteID: bb810fbf0dfe9c960800000000000000
+      internalID: 7622887525160327355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TreeTileSet_5
+      name: SkyToCloudTilesNoBackground_5
       rect:
         serializedVersion: 2
         x: 8
@@ -354,20 +311,20 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6b3d1e7ee43bc370800000000000000
-      internalID: 8343820933556681579
+      spriteID: 26229b0b5f7cacbe0800000000000000
+      internalID: -1456131671455096222
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TreeTileSet_6
+      name: SkyToCloudTilesNoBackground_6
       rect:
         serializedVersion: 2
         x: 16
@@ -375,20 +332,20 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a22ea6573f5835f0800000000000000
-      internalID: -776766244439317847
+      spriteID: fe189b3dff0b1cca0800000000000000
+      internalID: -5998318615865490961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TreeTileSet_7
+      name: SkyToCloudTilesNoBackground_7
       rect:
         serializedVersion: 2
         x: 24
@@ -396,26 +353,20 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -3, y: -3}
-        - {x: -3, y: -1}
-        - {x: 1, y: -1}
-        - {x: 1, y: 3}
-        - {x: 4, y: 3}
-        - {x: 4, y: -3}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d099aaec115dc9b60800000000000000
-      internalID: 7754306930883598605
+      spriteID: 1970d1dc57e210c30800000000000000
+      internalID: 4323788200739669905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TreeTileSet_8
+      name: SkyToCloudTilesNoBackground_8
       rect:
         serializedVersion: 2
         x: 0
@@ -423,20 +374,20 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 201a1c81db2334110800000000000000
-      internalID: 1243893709829939458
+      spriteID: b77f225f5d6412270800000000000000
+      internalID: 8223932279309924219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TreeTileSet_9
+      name: SkyToCloudTilesNoBackground_9
       rect:
         serializedVersion: 2
         x: 8
@@ -444,20 +395,20 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d001f25c12300800800000000000000
-      internalID: 576515849535422677
+      spriteID: db02e07028a7c7c10800000000000000
+      internalID: 2052650229056807101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TreeTileSet_10
+      name: SkyToCloudTilesNoBackground_10
       rect:
         serializedVersion: 2
         x: 16
@@ -465,20 +416,20 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8e91ddb8926af850800000000000000
-      internalID: 6411545427674504847
+      spriteID: 0d42470e03aea0a30800000000000000
+      internalID: 4182412699611964624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TreeTileSet_11
+      name: SkyToCloudTilesNoBackground_11
       rect:
         serializedVersion: 2
         x: 24
@@ -486,72 +437,20 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -3, y: -4}
-        - {x: -3, y: 4}
-        - {x: 3, y: 4}
-        - {x: 3, y: -4}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76887aa09ce06de00800000000000000
-      internalID: 1069058218177038439
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TreeTileSet_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b65c17d949bb63450800000000000000
-      internalID: 6068243794899354987
+      spriteID: e6220a41e921a6a00800000000000000
+      internalID: 750432758070780526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TreeTileSet_13
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -4, y: -3}
-        - {x: -4, y: 3}
-        - {x: -1, y: 3}
-        - {x: -1, y: -1}
-        - {x: 3, y: -1}
-        - {x: 3, y: -3}
-      tessellationDetail: 0
-      bones: []
-      spriteID: aae375bee50c97970800000000000000
-      internalID: 8753238864679091882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TreeTileSet_14
+      name: SkyToCloudTilesNoBackground_12
       rect:
         serializedVersion: 2
         x: 24
@@ -559,14 +458,14 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d9f3f3da2e220c70800000000000000
-      internalID: 8935755372135971286
+      spriteID: 3522ba9381137d880800000000000000
+      internalID: -8586340184442068397
       vertices: []
       indices: 
       edges: []

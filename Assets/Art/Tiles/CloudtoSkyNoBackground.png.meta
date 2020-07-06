@@ -1,22 +1,67 @@
 fileFormatVersion: 2
-guid: 6b6c3ee5daa720d41b1a89f6838adfe7
+guid: 9d02617c648b32149ae034c6c4b22a1b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 148595912367214231
-    second: TreeTileSetExtras_0
+      213: 1929369554824477182
+    second: CloudtoSkyNoBackground_0
   - first:
-      213: -1523159184526647345
-    second: TreeTileSetExtras_1
+      213: 8473469613620820881
+    second: CloudtoSkyNoBackground_1
   - first:
-      213: -6765311385131734606
-    second: TreeTileSetExtras_2
+      213: -4688252614176035680
+    second: CloudtoSkyNoBackground_2
   - first:
-      213: -416127486123923112
-    second: TreeTileSetExtras_3
+      213: -6081226026064884175
+    second: CloudtoSkyNoBackground_3
   - first:
-      213: 7200805095964304118
-    second: TreeTileSetExtras_4
+      213: 1585220167918709620
+    second: CloudtoSkyNoBackground_4
+  - first:
+      213: -3097852553220205461
+    second: CloudtoSkyNoBackground_5
+  - first:
+      213: -6215464612971732168
+    second: CloudtoSkyNoBackground_6
+  - first:
+      213: -1339987602927169508
+    second: CloudtoSkyNoBackground_7
+  - first:
+      213: -4983960941228042916
+    second: CloudtoSkyNoBackground_8
+  - first:
+      213: 1959875673323956332
+    second: CloudtoSkyNoBackground_9
+  - first:
+      213: -1241374873972227723
+    second: CloudtoSkyNoBackground_10
+  - first:
+      213: -3461070383541684794
+    second: CloudtoSkyNoBackground_11
+  - first:
+      213: -7933223156979307148
+    second: CloudtoSkyNoBackground_12
+  - first:
+      213: 7195165578520781161
+    second: CloudtoSkyNoBackground_13
+  - first:
+      213: 8320189521516396208
+    second: CloudtoSkyNoBackground_14
+  - first:
+      213: -6146338930030510163
+    second: CloudtoSkyNoBackground_15
+  - first:
+      213: 8698460152611184879
+    second: CloudtoSkyNoBackground_0
+  - first:
+      213: 2874730168589572086
+    second: CloudtoSkyNoBackground_1
+  - first:
+      213: 6274375982132332062
+    second: CloudtoSkyNoBackground_2
+  - first:
+      213: -3437350255516414746
+    second: CloudtoSkyNoBackground_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -174,114 +219,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TreeTileSetExtras_0
+      name: CloudtoSkyNoBackground_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 24
+        y: 8
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -4, y: -2}
-        - {x: -4, y: 2}
-        - {x: 4, y: 2}
-        - {x: 4, y: -2}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79e09bbe13bef0200800000000000000
-      internalID: 148595912367214231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TreeTileSetExtras_1
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 24
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -4, y: -2}
-        - {x: -4, y: 2}
-        - {x: 4, y: 2}
-        - {x: 4, y: -2}
-      tessellationDetail: 0
-      bones: []
-      spriteID: fcf5aedaac6acdae0800000000000000
-      internalID: -1523159184526647345
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TreeTileSetExtras_2
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 24
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b9215ea329cc12a0800000000000000
-      internalID: -6765311385131734606
+      spriteID: fe0a7412c6327b870800000000000000
+      internalID: 8698460152611184879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TreeTileSetExtras_3
+      name: CloudtoSkyNoBackground_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f751eb7bd715e720800000000000000
+      internalID: 2874730168589572086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudtoSkyNoBackground_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
+        y: 0
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 859ae40914e993af0800000000000000
-      internalID: -416127486123923112
+      spriteID: e168d3276bf031750800000000000000
+      internalID: 6274375982132332062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TreeTileSetExtras_4
+      name: CloudtoSkyNoBackground_3
       rect:
         serializedVersion: 2
         x: 8
-        y: 16
+        y: 0
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f266c155166ee360800000000000000
-      internalID: 7200805095964304118
+      spriteID: 6ec885b87241c40d0800000000000000
+      internalID: -3437350255516414746
       vertices: []
       indices: 
       edges: []

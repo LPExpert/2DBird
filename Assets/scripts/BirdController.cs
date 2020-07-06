@@ -6,22 +6,25 @@ public class BirdController : MonoBehaviour
 {
     float horizontal;
     bool flight;
-    public float speed = 3.0f;
+    public float speed;
 
-    public float flyForce = 6.0f;
+    public float flyForce;
 
     //flight cooldown variables
     float flyCooldown = 0.3f;
     float flyCooldownTimer;
 
     //flight meter variables
-    float flyMeter = 3.0f;
+    float flyMeter = 6.0f;
     float flyMeterTimer;
-    float flyRecover = 1.0f;
+    float flyRecover = 2.0f;
 
     Rigidbody2D rigidbody2d;
 
     Animator animator;
+
+    public CircleCollider2D body;
+    public BoxCollider2D feet;
 
     Vector2 lookDirection = new Vector2(1, 0);
 
@@ -90,6 +93,7 @@ public class BirdController : MonoBehaviour
         Debug.Log(flyMeterTimer);
         animator.SetBool("isGrounded", isGrounded());
         animator.SetBool("isGliding", isFlyDepleted() || !Input.GetKey(KeyCode.Space));
+        UIStaminaBar.instance.setValue(flyMeterTimer / flyMeter);
     }
 
     private void FixedUpdate()
@@ -108,18 +112,31 @@ public class BirdController : MonoBehaviour
         rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, flyForce);
         flight = false;
         flyCooldownTimer = flyCooldown;
-    }
 
-    void DepleteFlyMeter()
-    {
-        if (isFlyDepleted())
+        if (flyMeterTimer - 0.3f <= 0)
         {
             flyMeterTimer = 0;
         }
         else
         {
-            flyMeterTimer -= Time.deltaTime;
+            flyMeterTimer -= 0.2f;
         }
+    }
+
+    void DepleteFlyMeter()
+    {
+        if(!flight)
+        {
+            if (isFlyDepleted())
+            {
+                flyMeterTimer = 0;
+            }
+            else
+            {
+                flyMeterTimer -= Time.deltaTime * 0.5f;
+            }
+        }
+        
     }
 
     bool isFlyCooldown()
@@ -153,7 +170,6 @@ public class BirdController : MonoBehaviour
 
     bool isGrounded()
     {
-        RaycastHit2D ground = Physics2D.Raycast(rigidbody2d.position, Vector2.down, 0.1f, LayerMask.GetMask("Tile"));
-        return ground.collider != null;
+        return feet.IsTouchingLayers(LayerMask.GetMask("Tile"));
     }
 }
