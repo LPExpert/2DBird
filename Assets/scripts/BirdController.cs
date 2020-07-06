@@ -103,7 +103,11 @@ public class BirdController : MonoBehaviour
             Fly();
         }
         rigidbody2d.velocity = new Vector2(speed * horizontal, rigidbody2d.velocity.y);
-        
+
+        if (rigidbody2d.velocity.y < 0 && Input.GetKey(KeyCode.UpArrow))
+        {
+            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, rigidbody2d.velocity.y * 0.8f);
+        }        
         
     }
 
@@ -119,13 +123,13 @@ public class BirdController : MonoBehaviour
         }
         else
         {
-            flyMeterTimer -= 0.2f;
+            flyMeterTimer -= 0.3f;
         }
     }
 
     void DepleteFlyMeter()
     {
-        if(!flight)
+        if(!flight && (rigidbody2d.velocity.y < 0 && Input.GetKey(KeyCode.UpArrow)))
         {
             if (isFlyDepleted())
             {
