@@ -21,6 +21,8 @@ public class BirdController : MonoBehaviour
 
     Rigidbody2D rigidbody2d;
 
+    Animator animator;
+
     Vector2 lookDirection = new Vector2(1, 0);
 
     // Start is called before the first frame update
@@ -29,6 +31,7 @@ public class BirdController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         flyCooldownTimer = flyCooldown;
         flyMeterTimer = flyMeter;
+        animator = GetComponent<Animator>();
 
     }
 
@@ -47,6 +50,9 @@ public class BirdController : MonoBehaviour
             lookDirection.Normalize();
         }
 
+        animator.SetFloat("LookX", lookDirection.x);
+        animator.SetFloat("Speed", move.magnitude);
+
         if (!isFlyDepleted())
         {
 
@@ -56,6 +62,8 @@ public class BirdController : MonoBehaviour
             if (Input.GetKey(KeyCode.Space) && !isFlyCooldown())
             {
                 flight = true;
+                animator.SetTrigger("TakeOff");
+                
             }
 
             if (isFlyCooldown())
@@ -80,23 +88,24 @@ public class BirdController : MonoBehaviour
         }
 
         Debug.Log(flyMeterTimer);
-
+        animator.SetBool("isGrounded", isGrounded());
+        animator.SetBool("isGliding", isFlyDepleted() || !Input.GetKey(KeyCode.Space));
     }
 
     private void FixedUpdate()
     {
-        if(flight)
+        if (flight)
+        {
             Fly();
-        Vector2 position = rigidbody2d.position;
-        position.x = position.x + speed * horizontal * Time.fixedDeltaTime;
-        rigidbody2d.position = position;
+        }
+        rigidbody2d.velocity = new Vector2(speed * horizontal, rigidbody2d.velocity.y);
         
         
     }
 
     void Fly()
     {
-        rigidbody2d.velocity = Vector2.up * flyForce;
+        rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, flyForce);
         flight = false;
         flyCooldownTimer = flyCooldown;
     }
@@ -144,7 +153,7 @@ public class BirdController : MonoBehaviour
 
     bool isGrounded()
     {
-        RaycastHit2D ground = Physics2D.Raycast(rigidbody2d.position + Vector2.up * 0.2f, Vector2.down, 0.5f, LayerMask.GetMask("Tile"));
+        RaycastHit2D ground = Physics2D.Raycast(rigidbody2d.position, Vector2.down, 0.1f, LayerMask.GetMask("Tile"));
         return ground.collider != null;
     }
 }
