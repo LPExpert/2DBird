@@ -18,6 +18,13 @@ public class BirdController : MonoBehaviour
     float flyMeter = 6.0f;
     float flyMeterTimer;
     float flyRecover = 2.0f;
+    float flyDepletion = 0.4f;
+
+    //hunger variables
+    float hungerMeter = 6.0f;
+    float hungerMeterTimer;
+    float hungerRecoverRate = 2.0f;
+    float hungerDepletion = 0.1f;
 
     Rigidbody2D rigidbody2d;
 
@@ -34,6 +41,7 @@ public class BirdController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         flyCooldownTimer = flyCooldown;
         flyMeterTimer = flyMeter;
+        hungerMeterTimer = hungerMeter;
         animator = GetComponent<Animator>();
 
     }
@@ -90,10 +98,11 @@ public class BirdController : MonoBehaviour
             GroundRest();
         }
 
-        Debug.Log(flyMeterTimer);
+        DepleteHungerMeter();
         animator.SetBool("isGrounded", isGrounded());
         animator.SetBool("isGliding", isFlyDepleted() || !Input.GetKey(KeyCode.Space));
         UIStaminaBar.instance.setValue(flyMeterTimer / flyMeter);
+        UIHungerBar.instance.setValue(hungerMeterTimer / hungerMeter);
     }
 
     private void FixedUpdate()
@@ -104,9 +113,9 @@ public class BirdController : MonoBehaviour
         }
         rigidbody2d.velocity = new Vector2(speed * horizontal, rigidbody2d.velocity.y);
 
-        if (rigidbody2d.velocity.y < 0 && Input.GetKey(KeyCode.UpArrow))
+        if (rigidbody2d.velocity.y < 0 && Input.GetKey(KeyCode.W))
         {
-            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, rigidbody2d.velocity.y * 0.8f);
+            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x * 1.5f, rigidbody2d.velocity.y * 0.8f);
         }        
         
     }
@@ -129,7 +138,7 @@ public class BirdController : MonoBehaviour
 
     void DepleteFlyMeter()
     {
-        if(!flight && (rigidbody2d.velocity.y < 0 && Input.GetKey(KeyCode.UpArrow)))
+        if(!flight && (rigidbody2d.velocity.y < 0 && Input.GetKey(KeyCode.W)))
         {
             if (isFlyDepleted())
             {
@@ -137,10 +146,24 @@ public class BirdController : MonoBehaviour
             }
             else
             {
-                flyMeterTimer -= Time.deltaTime * 0.5f;
+                flyMeterTimer -= Time.deltaTime * flyDepletion;
             }
         }
         
+    }
+
+    void DepleteHungerMeter()
+    {
+        
+        if (isHungerDepleted())
+        {
+            hungerMeterTimer = 0;
+        }
+        else
+        {
+            hungerMeterTimer -= Time.deltaTime * hungerDepletion;
+        }
+
     }
 
     bool isFlyCooldown()
@@ -152,6 +175,16 @@ public class BirdController : MonoBehaviour
     bool isFlyDepleted()
     {
         return flyMeterTimer - Time.deltaTime <= 0;
+    }
+
+    bool isHungerDepleted()
+    {
+        return hungerMeterTimer - Time.deltaTime <= 0;
+    }
+
+    bool isHungerMeterFull()
+    {
+        return hungerMeterTimer + hungerRecoverRate >= hungerMeter;
     }
 
     bool isFlyMeterFull()
@@ -175,5 +208,17 @@ public class BirdController : MonoBehaviour
     bool isGrounded()
     {
         return feet.IsTouchingLayers(LayerMask.GetMask("Tile"));
+    }
+
+    public void hungerRecover()
+    {
+        if(isHungerMeterFull())
+        {
+            hungerMeterTimer = hungerMeter;
+        }
+        else
+        {
+            hungerMeterTimer += hungerRecoverRate;
+        }
     }
 }
